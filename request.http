@@ -1,11 +1,11 @@
-GET https://google.com/ HTTP/1.1
+GET https://url-shortener-backend-fqxc.onrender.com HTTP/1.1
 
 ###
 
-POST http://localhost:3000/app/create HTTP/1.1
+POST http://localhost:3000/app/create?expiresIn=0 0 0 58 HTTP/1.1
 content-type: application/json
 
 {
-    "hash" : "amazonUrl" ,  
+    "hash" : "hhello" ,  
     "actual_url" : "http://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=5257472031&pd_rd_w=xdwAx&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=8ESHAEN528RJ61A727X0&pd_rd_wg=lsAfa&pd_rd_r=a7c47d44-ae6e-4f79-a0a2-8e932027a4db&ref_=pd_hp_d_atf_unk"
 }

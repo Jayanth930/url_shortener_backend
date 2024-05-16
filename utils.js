@@ -12,7 +12,7 @@ export const getTimes = (expiresIn)=>{
     
     const currentTime = new Date();
     if(expiresIn === undefined || expiresIn === "") return { currentTime , expirationTime :  new Date('5000-06-12')}
-    const [daysStr, hoursStr, minutesStr, secondsStr] = expiresIn.split(' ');
+    const [daysStr, hoursStr, minutesStr, secondsStr] = expiresIn.trim().split(' ');
     
     const days = parseInt(daysStr) || 0 ;
     const hours = parseInt(hoursStr) || 0;
